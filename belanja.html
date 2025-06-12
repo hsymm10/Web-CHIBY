@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Belanja - CHIBBY STYLE</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
+  <style>
+    body {
+      background-color: #ffeef5;
+      color: #333; /* Warna teks lebih gelap untuk keterbacaan */
+    }
+
+    .product-card {
+      transition: transform 0.3s;
+    }
+
+    .product-card:hover {
+      transform: scale(1.05);
+    }
+
+    .text-pink {
+      color: #d63384;
+    }
+
+    .bg-pink {
+      background-color: #f1c6dc !important;
+    }
+
+    .social-icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 8px;
+    }
+
+    .highlighted {
+      filter: brightness(1.2);
+      transition: filter 0.3s;
+    }
+
+    footer {
+      background-color: #f1c6dc;
+      color: white;
+      text-align: center;
+      padding: 2rem 0;
+      margin-top: 3rem;
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      margin: 0 10px;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-pink shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">CHIBBY STYLE</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="belanja.html">Belanja</a></li>
+      </ul>
+      <div class="d-flex align-items-center">
+        <img src="gambar/Logo CHIBBY.jpg" 
+             alt="Logo CHIBBY" 
+             width="40" 
+             height="40" 
+             class="rounded-circle ms-3 animate__animated" 
+             id="logoChibby" />
+      </div>
+    </div>
+  </div>
+</nav>
+
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center text-pink mb-5 animate__animated animate__fadeInDown">Belanja Sekarang</h2>
+    <div class="row g-4">
+      <div class="col-md-4" data-aos="fade-up">
+        <div class="card product-card h-100">
+          <img src="gambar/@keylathfirt13.jpg" id="img1" class="card-img-top" alt="Baju 1">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 1</h5>
+            <p class="card-text">Rp150.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%201" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img1')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card product-card h-100">
+          <img src="gambar/@keylathrift1.jpg" id="img2" class="card-img-top" alt="Baju 2">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 2</h5>
+            <p class="card-text">Rp175.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%202" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img2')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@keylathrift2.jpg" id="img3" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@keylathrift3.jpg" id="img3" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@keylathrift4.jpg" id="img3" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@keylathrift5.jpg" id="img3" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@keylathrift6.jpg" id="img3" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@keylathrift7.jpg" id="img3" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div> 
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@keylathrift8.jpg" id="img3" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>   
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@keylathrift9.jpg" id="img3" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@keylathrift10.jpg" id="img3" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@keylathrift11.jpg" id="img3" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@keylathrift12.jpg" id="img3" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@keylathrift13.jpg" id="img3" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@keylathrift14.jpg" id="img3" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@keylathrift15.jpg" id="img3" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@keylathrift16.jpg" id="img3" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@keylathrift17.jpg" id="img3" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@keylathrift18.jpg" id="img3" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@keylathrift19.jpg" id="img3" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@keylathrift20.jpg" id="img3" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@keylathrift21.jpg" id="img3" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@keylathrift22.jpg" id="img3" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@keylathrift23.jpg" id="img3" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@keylathrift24.jpg" id="img3" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@keylathrift25.jpg" id="img3" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@keylathrift26.jpg" id="img3" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@keylathrift27.jpg" id="img3" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@keylathrift28.jpg" id="img3" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@keylathrift29.jpg" id="img3" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@keylathrift30.jpg" id="img3" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@srthirt.crewneck1.jpg" id="img3" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@srthrift.crewneck2.jpg" id="img4" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@srthrift.crewneck3.jpg" id="img4" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+       <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@srthrift.crewneck4.jpg" id="img4" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+       <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@srthrift.crewneck5.jpg" id="img4" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+       <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@srthrift.creweneck6.jpg" id="img4" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+       <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@srthrift.crewneck7.jpg" id="img4" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@srthrift.crewneck8.jpg" id="img4" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@srthrift.crewneck9.jpg" id="img4" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@srthrift.crewneck10.jpg" id="img4" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@srthrift.crewneck11.jpg" id="img4" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@srthrift.crewneck12.jpg" id="img4" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@srthrift.crewneck13.jpg" id="img4" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@srthrift.crewneck14.jpg" id="img4" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@srthrift.crewneck15.jpg" id="img4" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@srthrift.crewneck16.jpg" id="img4" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@srthrift.crewneck17.jpg" id="img4" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@srthrift.crewneck18.jpg" id="img4" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@srthrift.crewneck19.jpg" id="img4" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@srthrift.crewneck20.jpg" id="img4" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@srthrift.crewneck21.jpg" id="img4" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@srthrift.crewneck22.jpg" id="img4" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@srthrift.crewneck23.jpg" id="img4" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card product-card h-100">
+          <img src="gambar/@srthrift.crewneck24.jpg" id="img4" class="card-img-top" alt="Baju 3">
+          <div class="card-body text-center">
+            <h5 class="card-title">Baju Trendy 3</h5>
+            <p class="card-text">Rp200.000</p>
+            <a href="https://wa.me/6281234567890?text=Saya%20ingin%20memesan%20Baju%20Trendy%203" class="btn btn-pink text-white" style="background-color: #d63384;" onclick="highlightImage('img3')">Pesan via WhatsApp</a>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </div>
+</section>
+
+<footer class="bg-pink text-white text-center py-4">
+  <p class="mb-1">Temui kami di:</p>
+  <a href="https://instagram.com" class="text-white me-3 d-inline-flex align-items-center" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram" width="20" class="me-1" /> Instagram
+  </a>
+  <a href="https://wa.me/6281234567890" class="text-white me-3 d-inline-flex align-items-center" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="WhatsApp" width="20" class="me-1" /> WhatsApp
+  </a>
+  <a href="https://youtube.com" class="text-white d-inline-flex align-items-center" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png" alt="YouTube" width="20" class="me-1" /> YouTube
+  </a>
+  <p class="mt-2 mb-0">© 2025 CHIBBY STYLE</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000,
+    once: true
+  });
+
+  function highlightImage(imgId) {
+    const img = document.getElementById(imgId);
+    img.classList.add("highlighted", "animate__animated", "animate__pulse");
+
+    setTimeout(() => {
+      img.classList.remove("highlighted", "animate__animated", "animate__pulse");
+    }, 1000);
+  }
+
+  const logo = document.getElementById('logoChibby');
+  logo.addEventListener('mouseover', () => {
+    logo.classList.add('animate__pulse');
+  });
+  logo.addEventListener('animationend', () => {
+    logo.classList.remove('animate__pulse');
+  });
+</script>
+
+</body>
+</html>

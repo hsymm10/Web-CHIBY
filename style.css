@@ -1,0 +1,168 @@
+/* ========================
+   Warna-warna Khusus Pink
+======================== */
+.bg-pink {
+  background-color: #f8c8dc !important; /* Pink pastel */
+}
+
+.bg-light-pink {
+  background-color: #fff0f5 !important; /* Pink muda */
+}
+
+.text-pink {
+  color: #e78db6 !important; /* Pink terang */
+}
+
+a.text-pink:hover {
+  color: #e78db6 !important;
+}
+
+/* ========================
+   Hero Section Background
+======================== */
+.hero-bg {
+  background: linear-gradient(135deg, rgba(248, 200, 220, 0.6), rgba(252, 239, 249, 0.6)), url('gambar/image.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* ========================
+   Tombol WhatsApp Melayang
+======================== */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+/* ========================
+   Navbar Custom
+======================== */
+.navbar {
+  background-color: #f8c8dc !important;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff !important;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  color: #ffffffcc !important;
+}
+
+/* ========================
+   Tombol Custom
+======================== */
+.btn-outline-pink {
+  color: #d63384;
+  border: 1px solid #f1c6dc;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-pink:hover {
+  background-color: #f1c6dc;
+  color: #fff;
+}
+
+.btn-pink {
+  background-color: #f1c6dc;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.btn-pink:hover {
+  background-color: #f1c6dc;
+  color: #fff;
+}
+
+/* ========================
+   Footer
+======================== */
+footer {
+  background-color: #f1c6dc;
+  color: white;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  margin: 0 10px;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #ffc0cb;
+}
+
+.footer-column h4 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ffc0cb;
+}
+
+/* ========================
+   Kartu Produk
+======================== */
+.product-card {
+  transition: transform 0.3s;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(214, 51, 132, 0.1);
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+/* ========================
+   Efek Highlight Gambar
+======================== */
+.highlighted {
+  filter: brightness(1.2);
+  transition: filter 0.3s;
+}
+
+/* ========================
+   Judul Halaman
+======================== */
+.section-title {
+  color: #f1c6dc;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+

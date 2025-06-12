@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Us - Delicious Cakes and Snacks</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #fff7f0;
+      color: #333;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: #ff8c42;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+    }
+
+    .menu {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .menu li {
+      display: inline;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
+
+    .menu a:hover,
+    .menu .active {
+      text-decoration: underline;
+    }
+
+    .about {
+      padding: 60px 30px;
+      text-align: center;
+    }
+
+    .about-title {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #ff8c42;
+    }
+
+    .about-description {
+      max-width: 800px;
+      margin: 0 auto 20px auto;
+      font-size: 18px;
+      line-height: 1.8;
+    }
+
+    .about-video-link {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .about-video-link a {
+      background-color: #ff8c42;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 16px;
+      transition: 0.3s ease;
+    }
+
+    .about-video-link a:hover {
+      background-color: #e6762e;
+    }
+
+    @media (max-width: 600px) {
+      .about-title {
+        font-size: 28px;
+      }
+
+      .about-description {
+        font-size: 16px;
+      }
+
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .menu {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="logo">Toko Kue</div>
+    <ul class="menu">
+      <li><a href="Hisyam.html">Home</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="contac.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- Section About -->
+  <section class="about">
+    <h1 class="about-title">Tentang Kami</h1>
+    <p class="about-description">
+      Selamat datang di dunia kue dan camilan lezat kami! Kami ahli dalam menciptakan berbagai suguhan tradisional dan modern yang akan menghadirkan kegembiraan di setiap kesempatan.
+      Dari tekstur kue bolu yang lembut hingga lapisan kue lapis warna-warni, pilihan kami dirancang untuk memuaskan hasrat manis Anda.
+    </p>
+    <p class="about-description">
+      Komitmen kami adalah memberikan kualitas terbaik di setiap gigitan. Kami merayakan kegembiraan berbagi makanan lezat dengan teman dan keluarga.
+      Manjakan diri dengan kreasi manis kami dan rasakan kehangatan dan kebahagiaan yang mereka bawa ke momen spesial Anda!
+    </p>
+  </section>
+
+  <!-- Link Video -->
+  <p class="about-video-link">
+    <a href="https://youtu.be/-xlmBoQ4paI?si=L6sgwcSkGVMmI6Wi" target="_blank">
+      <i class="fas fa-play-circle"></i> Tonton Video Kami
+    </a>
+  </p>
+
+</body>
+</html>
